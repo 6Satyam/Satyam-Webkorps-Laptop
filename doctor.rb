@@ -1,5 +1,5 @@
 class Office
-  DOCTOR_NAMES_LIST = ["Ravi", "Amar", "Krishna", "Shiva", "Vishnu"]
+  DOCTOR_NAMES_LIST = ["Ravi", "Amar", "Krishna", "Shiv", "Vishnu"]
   def initialize
     @doctors = []
    DOCTOR_NAMES_LIST.each do |name|
@@ -11,8 +11,7 @@ require 'scanf.rb'
   def doctors_list
     return DOCTOR_NAMES_LIST
   end
-
-  def getDoctor(name)
+def getDoctor(name)
     selectedDoctorIndex = @doctors.index{|doctor| doctor.name == name}
     if (selectedDoctorIndex != nil)
       return @doctors.at(selectedDoctorIndex)
